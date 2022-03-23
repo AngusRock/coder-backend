@@ -31,8 +31,13 @@ class Contenedor {
         }
     }
 
-    getAll(){
-        return arrayOfProducts;
+    async getAll(){
+        try {
+            arrayOfProducts = JSON.parse(await fs.promises.readFile(this.fileName, 'utf-8'));
+            return arrayOfProducts;
+        } catch (error) {
+            return null;
+        }
     }
 
     async deleteById(id){
@@ -114,6 +119,7 @@ const contenedor = new Contenedor('productos.txt');
     console.log('id asignado: ',await contenedor.save(new Producto('disco 2',4400, 20)));
     console.log('id asignado: ',await contenedor.save(new Producto('disco test',5400, 10)));
     console.log('obtener por id',await contenedor.getById(3));
+    console.log('obtener todos los productos',await contenedor.getAll());
     await contenedor.deleteById(2);
     //await contenedor.deleteAll();  //metodo comentado para que no borre el contenido al final. se puede descomentar para testear  
   })()
