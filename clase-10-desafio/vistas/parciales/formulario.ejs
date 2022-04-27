@@ -1,0 +1,25 @@
+<form method="POST" action="api/productos/guardar">
+    <table>
+        <tr>
+          <td><label for="title">Titulo</label></td>
+          <td><input type="text" name="title" required></td>
+        </tr>
+        <tr>
+            <td><label for="price">Precio</label></td>
+            <td><input type="number" name="price" required></td>
+        </tr>
+        <tr>
+            <td><label for="thumbnail">Link Imagen</label></td>
+            <td><input type="text" name="thumbnail" required></td>
+        </tr>
+    </table>
+    <div>
+        <br/>
+        <input type="submit" value="Guardar">        
+    </div>    
+</form>
+<div style="margin-top: 10px">
+<a href="/productos">
+    <input type="submit" value="Lista de Productos"/>
+</a>
+</div>
