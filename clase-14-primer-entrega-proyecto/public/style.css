@@ -1,0 +1,49 @@
+/*estilo para todos los tags li*/
+body {
+  font-family: 'Nunito', sans-serif;
+}
+li {
+    width: 500px;
+    margin: 4px;
+    padding: 4px;
+    /* list-style: none */
+  }
+
+#productsTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#productsTable  th {
+    text-align: left;
+    background-color: #056bcb;
+    color: white;
+}
+
+#productsTable td,  #productsTable th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#productsTable td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:30px;
+    height:30px
+}
+  
+  /*estilos personalizados*/
+  .midlaner {background-color: #eeeeee}
+  .toplaner {background-color: #ffea00}
+
+  input[type=submit] {
+    background-color: #006fca;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;    
+    cursor: pointer;
+    border-radius: 7px;
+  }
