@@ -1,0 +1,10 @@
+<h1>Listado de Productos</h1>
+<% if (productos.length> 0) { %>
+<%- include('./tablaContent.ejs') %>
+<% } else {%>
+<p>No hay productos cargados</p>
+<% } %>
+<br>
+<a href="/">
+    <input type="submit" value="Formulario de Carga"/>
+</a>

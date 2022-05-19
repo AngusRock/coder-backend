@@ -1,0 +1,37 @@
+<form method="POST" action="api/productos/guardar">
+    <table>
+        <tr>
+          <td><label for="nombre">Nombre</label></td>
+          <td><input type="text" name="nombre" required></td>
+        </tr>
+        <tr>
+          <td><label for="descripcion">Descripción</label></td>
+          <td><input type="text" name="descripcion" required></td>
+        </tr>
+        <tr>
+          <td><label for="codigo">Código</label></td>
+          <td><input type="text" name="codigo" ></td>
+        </tr>
+        <tr>
+          <td><label for="foto">Imagen</label></td>
+          <td><input type="text" name="foto" ></td>
+        </tr>
+        <tr>
+          <td><label for="precio">Precio</label></td>
+          <td><input type="number" name="precio" required></td>
+        </tr>
+        <tr>
+            <td><label for="stock">Stock</label></td>
+            <td><input type="number" name="stock" ></td>
+        </tr>        
+    </table>
+    <div>
+        <br/>
+        <input type="submit" value="Guardar">        
+    </div>    
+</form>
+<div style="margin-top: 10px">
+<a href="/productos">
+    <input type="submit" value="Lista de Productos"/>
+</a>
+</div>
